@@ -13,6 +13,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddScoped<IGenreService, GenreService>();
+builder.Services.AddScoped<IMoviesService, MoviesService>();
+
+builder.Services.AddAutoMapper(typeof(Program));
 
 builder.Services.AddCors();
 
